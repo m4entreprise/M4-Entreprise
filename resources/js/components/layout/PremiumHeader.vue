@@ -3,6 +3,18 @@ import { ref } from 'vue';
 import { Link } from '@inertiajs/vue3';
 import { PhList, PhX, PhCaretDown } from '@phosphor-icons/vue';
 
+type ServiceSubItem = {
+  label: string;
+  href: string;
+  disabled?: boolean;
+};
+
+type ServiceItem = {
+  label: string;
+  href: string;
+  submenu?: ServiceSubItem[];
+};
+
 defineProps<{
   isCompact: boolean;
 }>();
@@ -39,7 +51,7 @@ const closeWebMenu = () => {
   }, 200);
 };
 
-const servicesMenu = [
+const servicesMenu: ServiceItem[] = [
   {
     label: 'Développement Web',
     href: '/services/developpement-web',
