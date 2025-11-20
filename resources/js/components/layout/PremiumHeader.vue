@@ -46,7 +46,7 @@ const servicesMenu = [
     submenu: [
       { label: 'Site Vitrine', href: '/services/site-vitrine' },
       { label: 'E-commerce', href: '/services/ecommerce' },
-      { label: 'Sur-mesure', href: '#', disabled: true },
+      { label: 'Sur-mesure', href: '/services/sur-mesure' },
     ]
   },
   { label: 'Consulting IT', href: '/services/consulting-it' },
@@ -62,8 +62,8 @@ const menuItems = [
 <template>
   <header
     :class="[
-      'fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out',
-      isCompact ? 'py-3 glass-strong shadow-2xl' : 'py-6 bg-background/30 backdrop-blur-sm',
+      'fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out bg-background/80 backdrop-blur-2xl',
+      isCompact ? 'py-3 glass-strong shadow-2xl' : 'py-6',
     ]"
   >
     <div class="container mx-auto px-6 lg:px-12">
@@ -98,7 +98,7 @@ const menuItems = [
             <!-- Services Dropdown Menu -->
             <div
               v-if="isServicesOpen"
-              class="absolute top-full left-0 mt-2 min-w-[250px] glass-strong rounded-2xl border border-white/10 shadow-2xl shadow-black/50 animate-fade-in"
+              class="absolute top-full left-0 mt-2 min-w-[250px] bg-background/70 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl shadow-black/50 animate-fade-in"
             >
               <div class="py-2">
                 <div
@@ -129,7 +129,7 @@ const menuItems = [
                     <!-- Web Submenu Items -->
                     <div
                       v-if="isWebMenuOpen"
-                      class="absolute left-full top-0 ml-2 min-w-[200px] glass-strong rounded-2xl border border-white/10 shadow-2xl shadow-black/50 animate-fade-in"
+                      class="absolute left-full top-0 ml-2 min-w-[200px] bg-background/70 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl shadow-black/50 animate-fade-in"
                     >
                       <div class="py-2">
                         <a
@@ -190,7 +190,7 @@ const menuItems = [
       <!-- Mobile Menu -->
       <div
         v-if="isMenuOpen"
-        class="lg:hidden mt-6 py-6 glass-strong rounded-3xl animate-fade-in border border-white/10"
+        class="lg:hidden mt-6 py-6 glass-strong bg-background/95 backdrop-blur-2xl rounded-3xl animate-fade-in border border-white/10"
       >
         <nav class="flex flex-col gap-2 px-6">
           <!-- Services Mobile -->

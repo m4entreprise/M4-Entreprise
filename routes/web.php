@@ -20,6 +20,10 @@ Route::get('/services/ecommerce', function () {
     return Inertia::render('services/Ecommerce');
 })->name('services.ecommerce');
 
+Route::get('/services/sur-mesure', function () {
+    return Inertia::render('services/SurMesure');
+})->name('services.sur-mesure');
+
 Route::get('/services/consulting-it', function () {
     return Inertia::render('services/ConsultingIT');
 })->name('services.consulting-it');
