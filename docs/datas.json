@@ -1,0 +1,310 @@
+{
+  "entreprise": {
+    "nom": "M4 Entreprise",
+    "baseline": "Solutions web, IT et médias pour TPE/PME",
+    "coordonnees": {
+      "adresse": "Rue de la Digue 92, 4683 Vivegnis",
+      "telephone": "+32 437 85 206",
+      "email": "contact@m4entreprise.be",
+      "tva": "BE1030459209"
+    },
+    "zones": ["Wallonie", "Bruxelles", "Luxembourg"],
+    "promesse": [
+      "Solutions complètes, rapides et compréhensibles",
+      "Un seul interlocuteur pour tout le numérique"
+    ]
+  },
+
+  "poles": {
+    "web": {
+      "services": [
+        "Création de sites web",
+        "Sites vitrines",
+        "Sites e-commerce",
+        "Sites métiers sur mesure",
+        "Apps web",
+        "SEO",
+        "Optimisation de vitesse",
+        "Responsive design",
+        "Maintenance"
+      ]
+    },
+    "consult": {
+      "services": [
+        "Audit IT",
+        "Audit réseau",
+        "Cybersécurité",
+        "Support & helpdesk",
+        "Vente & installation de matériel pro"
+      ]
+    },
+    "media": {
+      "services": [
+        "Production vidéo 4K/8K",
+        "Photographie pro",
+        "Motion design",
+        "Identité visuelle",
+        "Branding",
+        "Impression"
+      ]
+    }
+  },
+
+  "services_details": {
+    "creation_web": {
+      "sites_vitrines": {
+        "description": "Site internet clair, rapide et esthétique pour présenter l’entreprise.",
+        "objectifs": [
+          "Présenter vos services",
+          "Améliorer votre image professionnelle",
+          "Être facilement trouvé sur Google",
+          "Donner confiance aux prospects",
+          "Proposer un design moderne et responsive"
+        ],
+        "livrables": [
+          "Design personnalisé",
+          "Pages internes structurées",
+          "Optimisation SEO de base",
+          "Formulaire de contact / rendez-vous",
+          "Version mobile optimisée",
+          "Hébergement + maintenance possibles"
+        ],
+        "usages": [
+          "TPE/PME",
+          "Indépendants",
+          "Services",
+          "Associations"
+        ]
+      },
+
+      "sites_ecommerce": {
+        "description": "Plateforme complète pour vendre en ligne (produits, services, abonnements).",
+        "objectifs": [
+          "Vendre vos produits 24/7",
+          "Gérer stocks, paiements et livraisons",
+          "Automatiser le tunnel d’achat",
+          "Améliorer la conversion",
+          "Centraliser commandes & factures"
+        ],
+        "fonctionnalites": [
+          "Catalogue produits",
+          "Paiements sécurisés",
+          "Gestion des livraisons",
+          "Variantes & stocks",
+          "Codes promo",
+          "Abandons de panier",
+          "Compte client",
+          "Intégration ERP/CRM possible"
+        ],
+        "technos": [
+          "WooCommerce",
+          "Shopify",
+          "Solutions custom",
+          "Modules sur mesure"
+        ]
+      },
+
+      "sites_metiers": {
+        "description": "Application web métier conçue spécialement pour les besoins internes d’une entreprise.",
+        "objectifs": [
+          "Digitaliser un processus métier",
+          "Gagner du temps grâce à l’automatisation",
+          "Remplacer Excel et méthodes non fiables",
+          "Créer des workflows internes sur mesure",
+          "Optimiser la productivité"
+        ],
+        "exemples": [
+          "Gestion de planning",
+          "Gestion de production",
+          "Portail client",
+          "Gestion de commandes sur mesure",
+          "Outil de devis automate",
+          "CRM sur mesure",
+          "Intranet d’entreprise"
+        ],
+        "fonctionnalites": [
+          "Espace utilisateurs",
+          "Base de données personnalisée",
+          "Tableaux de bord",
+          "Connecteurs API",
+          "Intégration aux systèmes internes",
+          "Sécurité renforcée"
+        ],
+        "technos": [
+          "Apps web Laravel / Node",
+          "Front-end React / Vue",
+          "API REST / GraphQL",
+          "Hébergement sécurisé"
+        ]
+      }
+    },
+
+    "audit_wifi": {
+      "objectifs": [
+        "Optimiser la couverture WIFI",
+        "Assurer une connexion stable et rapide",
+        "Réduire interférences et perturbations"
+      ],
+      "technos": {
+        "wifi4": "600 Mbps",
+        "wifi5": "3.5 Gbps",
+        "wifi6": "9.6 Gbps",
+        "caracteristiques": ["MU-MIMO", "OFDMA", "Idéal environnements avec nombreux appareils"]
+      },
+      "offres": {
+        "audit_base": [
+          "Test simple de couverture",
+          "Recommandations rapides",
+          "Optimisation des canaux"
+        ],
+        "audit_avance": [
+          "Antenne pro",
+          "Rapport complet",
+          "Plan d’actions"
+        ],
+        "audit_complet": [
+          "Analyse logicielle poussée",
+          "Recommandations matériel",
+          "Accompagnement complet"
+        ]
+      }
+    },
+
+    "cyber_securite": {
+      "intérêts": [
+        "Réduire les risques financiers et juridiques",
+        "Prévenir les arrêts d’activité",
+        "Protéger la réputation",
+        "Sécuriser les données"
+      ],
+      "citation": "Ce n’est pas si une entreprise sera attaquée, mais quand.",
+      "offres": {
+        "audit": [
+          "Diagnostic des vulnérabilités",
+          "Rapport détaillé"
+        ],
+        "audit_actions": [
+          "Diagnostic",
+          "Plan d’actions",
+          "Mise en œuvre"
+        ],
+        "maintenance_securite": [
+          "Surveillance continue",
+          "Mises à jour",
+          "Rapports réguliers"
+        ]
+      }
+    },
+
+    "maintenance_informatique": {
+      "parc": [
+        "PC & laptops",
+        "Accessoires",
+        "Périphériques",
+        "Serveurs & NAS",
+        "Firewall, switchs, bornes WIFI",
+        "Logiciels & licences",
+        "Mobiles",
+        "Cloud"
+      ],
+      "taches": [
+        "Administration serveurs & réseau",
+        "Protection réseau",
+        "Maintenance préventive",
+        "Dépannage rapide",
+        "Optimisation performances"
+      ],
+      "approche": [
+        "Audit",
+        "Remise à niveau",
+        "Maintenance continue",
+        "Intervention site & distance"
+      ]
+    },
+
+    "reseaux_sociaux": {
+      "interets": [
+        "Générer du trafic",
+        "Informer prospects/clients",
+        "Humaniser l’entreprise",
+        "Recueillir feedback",
+        "Publicité ciblée",
+        "Créer une communication permanente"
+      ],
+      "reseaux": {
+        "facebook": "Très utilisé",
+        "instagram": "Pertinent pour visuels",
+        "linkedin": "Idéal B2B"
+      },
+      "strategie": [
+        "Stratégie sur-mesure",
+        "Planning éditorial",
+        "Création visuelle",
+        "Suivi de performance"
+      ]
+    },
+
+    "support_informatique": {
+      "definition": "Gestion des incidents informatiques à distance ou sur site.",
+      "niveaux": {
+        "niveau1": [
+          "Analyse",
+          "Criticité",
+          "Prise en main à distance",
+          "Résolution",
+          "Clôture"
+        ],
+        "niveau2": [
+          "Déplacement",
+          "Diagnostic matériel",
+          "Coordination constructeurs",
+          "Résolution avancée"
+        ],
+        "niveau3": [
+          "Diagnostic profond",
+          "Correction avancée",
+          "Optimisation infrastructure",
+          "Monitoring"
+        ]
+      },
+      "avantages": [
+        "Réactivité forte",
+        "Large base de connaissances",
+        "Suivi par tickets"
+      ]
+    },
+
+    "voip_telephonie": {
+      "interets": [
+        "Qualité supérieure",
+        "Configuration avancée",
+        "Téléphonie + visio intégrées",
+        "Multi-appareils",
+        "Indépendance réseau GSM"
+      ],
+      "3cx": [
+        "Apps mobiles et web",
+        "Visio sans supplément",
+        "Live chat site / réseaux sociaux",
+        "SMS clients",
+        "Intégrations Microsoft/Google",
+        "Numéros conservés",
+        "Sécurisation avancée"
+      ],
+      "offre": [
+        "Quantification besoins",
+        "Configuration 3CX",
+        "Personnalisation",
+        "Formation & accompagnement"
+      ]
+    }
+  },
+
+  "cross_sell": [
+    "Maintenance ↔ Cybersécurité",
+    "Audit WIFI ↔ Réseau ↔ VOIP",
+    "Réseaux sociaux ↔ M4 Media",
+    "Sites web ↔ SEO",
+    "Support informatique ↔ Vente matériel"
+  ]
+}
