@@ -53,7 +53,7 @@ const scrollToContact = () => {
 <template>
   <section
     id="hero"
-    class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+    class="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 sm:pt-24 lg:pt-20"
   >
     <!-- Background gradient -->
     <div class="absolute inset-0 bg-gradient-to-b from-primary/20 via-background to-background" />
@@ -71,7 +71,7 @@ const scrollToContact = () => {
         <!-- Main Title -->
         <h1
           ref="titleRef"
-          class="text-h1 font-display font-bold mb-8 leading-[1.05]"
+          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-h1 font-display font-bold mb-8 leading-[1.05]"
         >
           <span class="gradient-text drop-shadow-[0_0_30px_rgba(108,76,255,0.5)]">Solutions digitales</span>
           <br />
@@ -104,11 +104,11 @@ const scrollToContact = () => {
         <!-- CTAs -->
         <div
           ref="ctaRef"
-          class="flex flex-col sm:flex-row gap-5 justify-center items-center"
+          class="flex flex-col sm:flex-row gap-5 justify-center items-stretch sm:items-center px-4 sm:px-0"
         >
           <button
             @click="scrollToContact"
-            class="group relative px-10 py-5 bg-gradient-to-r from-primary to-accent text-white rounded-full font-semibold text-lg transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-primary/50 flex items-center gap-3 overflow-hidden"
+            class="group relative px-10 py-5 bg-gradient-to-r from-primary to-accent text-white rounded-full font-semibold text-base sm:text-lg transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-primary/50 flex items-center justify-center gap-3 overflow-hidden w-full sm:w-auto"
           >
             <span class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
             <span class="relative">Démarrer un projet</span>
@@ -121,37 +121,31 @@ const scrollToContact = () => {
 
           <a
             href="#portfolio"
-            class="group px-8 py-5 glass-strong hover:bg-white/10 text-white rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 flex items-center gap-3 border border-white/20 hover:border-primary/50"
+            class="group px-8 py-5 glass-strong hover:bg-white/10 text-white rounded-full font-semibold text-base sm:text-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-3 border border-white/20 hover:border-primary/50 w-full sm:w-auto"
           >
             <div class="w-12 h-12 rounded-full bg-gradient-to-br from-primary/30 to-accent/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
               <PhPlay :size="20" weight="fill" class="ml-0.5" />
             </div>
-            Voir nos réalisations
+            <span class="hidden sm:inline">Voir nos réalisations</span>
+            <span class="sm:hidden">Portfolio</span>
           </a>
         </div>
 
         <!-- Stats or Trust Indicators -->
-        <div class="mt-24 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div class="group text-center p-6 rounded-2xl glass-strong hover:bg-primary/10 transition-all duration-300 hover:scale-105">
-            <div class="text-5xl font-display font-bold gradient-text mb-3 drop-shadow-[0_0_20px_rgba(108,76,255,0.5)]">50+</div>
-            <div class="text-sm font-medium text-foreground/70 group-hover:text-white transition-colors">Projets réalisés</div>
+        <div class="mt-16 sm:mt-24 grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 max-w-4xl mx-auto px-4 sm:px-0">
+          <div class="group text-center p-4 sm:p-6 rounded-2xl glass-strong hover:bg-primary/10 transition-all duration-300 hover:scale-105">
+            <div class="text-3xl sm:text-4xl md:text-5xl font-display font-bold gradient-text mb-2 sm:mb-3 drop-shadow-[0_0_20px_rgba(108,76,255,0.5)]">50+</div>
+            <div class="text-xs sm:text-sm font-medium text-foreground/70 group-hover:text-white transition-colors">Projets réalisés</div>
           </div>
-          <div class="group text-center p-6 rounded-2xl glass-strong hover:bg-primary/10 transition-all duration-300 hover:scale-105">
-            <div class="text-5xl font-display font-bold gradient-text mb-3 drop-shadow-[0_0_20px_rgba(108,76,255,0.5)]">3</div>
-            <div class="text-sm font-medium text-foreground/70 group-hover:text-white transition-colors">Pôles d'expertise</div>
+          <div class="group text-center p-4 sm:p-6 rounded-2xl glass-strong hover:bg-primary/10 transition-all duration-300 hover:scale-105">
+            <div class="text-3xl sm:text-4xl md:text-5xl font-display font-bold gradient-text mb-2 sm:mb-3 drop-shadow-[0_0_20px_rgba(108,76,255,0.5)]">3</div>
+            <div class="text-xs sm:text-sm font-medium text-foreground/70 group-hover:text-white transition-colors">Pôles d'expertise</div>
           </div>
-          <div class="group text-center col-span-2 md:col-span-1 p-6 rounded-2xl glass-strong hover:bg-primary/10 transition-all duration-300 hover:scale-105">
-            <div class="text-5xl font-display font-bold gradient-text mb-3 drop-shadow-[0_0_20px_rgba(108,76,255,0.5)]">100%</div>
-            <div class="text-sm font-medium text-foreground/70 group-hover:text-white transition-colors">Satisfaction client</div>
+          <div class="group text-center col-span-2 md:col-span-1 p-4 sm:p-6 rounded-2xl glass-strong hover:bg-primary/10 transition-all duration-300 hover:scale-105">
+            <div class="text-3xl sm:text-4xl md:text-5xl font-display font-bold gradient-text mb-2 sm:mb-3 drop-shadow-[0_0_20px_rgba(108,76,255,0.5)]">100%</div>
+            <div class="text-xs sm:text-sm font-medium text-foreground/70 group-hover:text-white transition-colors">Satisfaction client</div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Scroll indicator -->
-    <div class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
-      <div class="w-7 h-12 border-2 border-primary rounded-full flex justify-center p-2 shadow-lg shadow-primary/30 bg-primary/5">
-        <div class="w-1.5 h-4 bg-gradient-to-b from-primary to-accent rounded-full animate-pulse" />
       </div>
     </div>
   </section>

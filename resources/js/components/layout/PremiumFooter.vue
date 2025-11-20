@@ -11,21 +11,26 @@ const props = defineProps<{
       email: string;
       tva: string;
     };
+    reseaux_sociaux?: {
+      instagram?: string;
+      facebook?: string;
+      linkedin?: string;
+    };
   };
 }>();
 
 const footerLinks = {
   services: [
-    { label: 'Développement Web', href: '#services' },
-    { label: 'Consulting IT', href: '#services' },
-    { label: 'Production Média', href: '#services' },
-    { label: 'Support & Maintenance', href: '#services' },
+    { label: 'Développement Web', href: '/services/developpement-web' },
+    { label: 'Consulting IT', href: '/services/consulting-it' },
+    { label: 'Production Média', href: '/services/production-media' },
+    { label: 'Support & Maintenance', href: '/services/consulting-it' },
   ],
   entreprise: [
-    { label: 'À propos', href: '#about' },
-    { label: 'Portfolio', href: '#portfolio' },
-    { label: 'Méthodologie', href: '#methodologie' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'À propos', href: '/#about' },
+    { label: 'Portfolio', href: '/portfolio' },
+    { label: 'Méthodologie', href: '/#methodologie' },
+    { label: 'Contact', href: '/#contact' },
   ],
   legal: [
     { label: 'Mentions légales', href: '/legal' },
@@ -35,9 +40,9 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: PhLinkedinLogo, href: '#', label: 'LinkedIn' },
-  { icon: PhFacebookLogo, href: '#', label: 'Facebook' },
-  { icon: PhInstagramLogo, href: '#', label: 'Instagram' },
+  { icon: PhLinkedinLogo, href: props.data.reseaux_sociaux?.linkedin || '#', label: 'LinkedIn' },
+  { icon: PhFacebookLogo, href: props.data.reseaux_sociaux?.facebook || '#', label: 'Facebook' },
+  { icon: PhInstagramLogo, href: props.data.reseaux_sociaux?.instagram || '#', label: 'Instagram' },
 ];
 </script>
 
@@ -131,6 +136,8 @@ const socialLinks = [
               v-for="social in socialLinks"
               :key="social.label"
               :href="social.href"
+              target="_blank"
+              rel="noopener noreferrer"
               :aria-label="social.label"
               class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-all duration-200 hover:scale-110"
             >

@@ -53,11 +53,11 @@ onMounted(() => {
 
     <div class="container mx-auto px-6 lg:px-12 relative z-10">
       <!-- Section Header -->
-      <div class="max-w-3xl mx-auto text-center mb-20">
-        <h2 class="text-h2 font-display font-bold mb-6 text-white">
+      <div class="max-w-3xl mx-auto text-center mb-12 sm:mb-20">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-h2 font-display font-bold mb-4 sm:mb-6 text-white px-4 sm:px-0">
           Ils nous font <span class="gradient-text drop-shadow-[0_0_30px_rgba(108,76,255,0.5)]">confiance</span>
         </h2>
-        <p class="text-xl text-foreground/70">
+        <p class="text-base sm:text-lg md:text-xl text-foreground/70 px-4 sm:px-0">
           Des entreprises de tous secteurs nous font confiance pour leur transformation digitale
         </p>
       </div>
@@ -79,22 +79,22 @@ onMounted(() => {
       </div>
 
       <!-- Stats -->
-      <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-        <div class="group text-center p-6 rounded-2xl glass-strong hover:bg-primary/10 transition-all duration-300 hover:scale-105">
-          <div class="text-4xl font-display font-bold gradient-text mb-2 drop-shadow-[0_0_20px_rgba(108,76,255,0.5)]">50+</div>
-          <div class="text-sm font-medium text-foreground/70 group-hover:text-white transition-colors">Clients actifs</div>
+      <div class="mt-12 sm:mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto px-4 sm:px-0">
+        <div class="group text-center p-4 sm:p-6 rounded-2xl glass-strong hover:bg-primary/10 transition-all duration-300 hover:scale-105">
+          <div class="text-3xl sm:text-4xl font-display font-bold gradient-text mb-2 drop-shadow-[0_0_20px_rgba(108,76,255,0.5)]">50+</div>
+          <div class="text-xs sm:text-sm font-medium text-foreground/70 group-hover:text-white transition-colors">Clients actifs</div>
         </div>
-        <div class="group text-center p-6 rounded-2xl glass-strong hover:bg-primary/10 transition-all duration-300 hover:scale-105">
-          <div class="text-4xl font-display font-bold gradient-text mb-2 drop-shadow-[0_0_20px_rgba(108,76,255,0.5)]">200+</div>
-          <div class="text-sm font-medium text-foreground/70 group-hover:text-white transition-colors">Projets livrés</div>
+        <div class="group text-center p-4 sm:p-6 rounded-2xl glass-strong hover:bg-primary/10 transition-all duration-300 hover:scale-105">
+          <div class="text-3xl sm:text-4xl font-display font-bold gradient-text mb-2 drop-shadow-[0_0_20px_rgba(108,76,255,0.5)]">200+</div>
+          <div class="text-xs sm:text-sm font-medium text-foreground/70 group-hover:text-white transition-colors">Projets livrés</div>
         </div>
-        <div class="group text-center p-6 rounded-2xl glass-strong hover:bg-primary/10 transition-all duration-300 hover:scale-105">
-          <div class="text-4xl font-display font-bold gradient-text mb-2 drop-shadow-[0_0_20px_rgba(108,76,255,0.5)]">98%</div>
-          <div class="text-sm font-medium text-foreground/70 group-hover:text-white transition-colors">Satisfaction</div>
+        <div class="group text-center p-4 sm:p-6 rounded-2xl glass-strong hover:bg-primary/10 transition-all duration-300 hover:scale-105">
+          <div class="text-3xl sm:text-4xl font-display font-bold gradient-text mb-2 drop-shadow-[0_0_20px_rgba(108,76,255,0.5)]">98%</div>
+          <div class="text-xs sm:text-sm font-medium text-foreground/70 group-hover:text-white transition-colors">Satisfaction</div>
         </div>
-        <div class="group text-center p-6 rounded-2xl glass-strong hover:bg-primary/10 transition-all duration-300 hover:scale-105">
-          <div class="text-4xl font-display font-bold gradient-text mb-2 drop-shadow-[0_0_20px_rgba(108,76,255,0.5)]">5+</div>
-          <div class="text-sm font-medium text-foreground/70 group-hover:text-white transition-colors">Années d'expérience</div>
+        <div class="group text-center p-4 sm:p-6 rounded-2xl glass-strong hover:bg-primary/10 transition-all duration-300 hover:scale-105">
+          <div class="text-3xl sm:text-4xl font-display font-bold gradient-text mb-2 drop-shadow-[0_0_20px_rgba(108,76,255,0.5)]">5+</div>
+          <div class="text-xs sm:text-sm font-medium text-foreground/70 group-hover:text-white transition-colors">Années d'expérience</div>
         </div>
       </div>
     </div>

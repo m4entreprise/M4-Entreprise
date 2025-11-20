@@ -8,6 +8,11 @@
       "email": "contact@m4entreprise.be",
       "tva": "BE1030459209"
     },
+    "reseaux_sociaux": {
+      "instagram": "https://www.instagram.com/m4entreprise.be/",
+      "facebook": "https://www.facebook.com/profile.php?id=61555838617465",
+      "linkedin": "https://www.linkedin.com/company/m4-entreprise/"
+    },
     "zones": ["Wallonie", "Bruxelles", "Luxembourg"],
     "promesse": [
       "Solutions complètes, rapides et compréhensibles",

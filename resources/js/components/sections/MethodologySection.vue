@@ -106,11 +106,11 @@ onMounted(() => {
 
     <div class="container mx-auto px-6 lg:px-12 relative z-10">
       <!-- Section Header -->
-      <div class="max-w-3xl mx-auto text-center mb-20">
-        <h2 class="text-h2 font-display font-bold mb-6">
-          Notre <span class="gradient-text">Méthodologie</span>
+      <div class="max-w-3xl mx-auto text-center mb-12 sm:mb-20">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-h2 font-display font-bold mb-4 sm:mb-6 text-white px-4 sm:px-0">
+          Notre <span class="gradient-text drop-shadow-[0_0_30px_rgba(108,76,255,0.5)]">Méthodologie</span>
         </h2>
-        <p class="text-body text-muted-foreground">
+        <p class="text-base sm:text-lg md:text-xl text-foreground/70 px-4 sm:px-0">
           Un processus éprouvé pour garantir la réussite de votre projet
         </p>
       </div>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
+import { Link } from '@inertiajs/vue3';
 import {
   PhCode,
   PhShieldCheck,
@@ -29,6 +30,7 @@ const servicesData = [
     description: 'Solutions web sur mesure pour votre entreprise',
     color: 'from-primary to-accent',
     services: props.poles.web.services,
+    link: '/services/developpement-web',
   },
   {
     id: 'consult',
@@ -37,6 +39,7 @@ const servicesData = [
     description: 'Expertise technique et sécurité informatique',
     color: 'from-accent to-primary',
     services: props.poles.consult.services,
+    link: '/services/consulting-it',
   },
   {
     id: 'media',
@@ -45,6 +48,7 @@ const servicesData = [
     description: 'Création de contenu visuel premium',
     color: 'from-primary/80 to-accent/80',
     services: props.poles.media.services,
+    link: '/services/production-media',
   },
 ];
 
@@ -77,11 +81,11 @@ const setCardRef = (el: any, index: number) => {
   <section id="services" class="py-32 relative">
     <div class="container mx-auto px-6 lg:px-12">
       <!-- Section Header -->
-      <div class="max-w-3xl mx-auto text-center mb-20">
-        <h2 class="text-h2 font-display font-bold mb-6 text-white">
+      <div class="max-w-3xl mx-auto text-center mb-12 sm:mb-20">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-h2 font-display font-bold mb-4 sm:mb-6 text-white px-4 sm:px-0">
           Nos <span class="gradient-text drop-shadow-[0_0_30px_rgba(108,76,255,0.5)]">Services</span>
         </h2>
-        <p class="text-xl text-foreground/70">
+        <p class="text-base sm:text-lg md:text-xl text-foreground/70 px-4 sm:px-0">
           Trois pôles d'expertise pour couvrir tous vos besoins digitaux
         </p>
       </div>
@@ -137,13 +141,13 @@ const setCardRef = (el: any, index: number) => {
             </ul>
 
             <!-- CTA -->
-            <a
-              href="#"
+            <Link
+              :href="service.link"
               class="inline-flex items-center gap-2 text-primary group-hover:gap-4 transition-all duration-300 font-semibold hover:text-accent"
             >
               En savoir plus
               <PhArrowRight :size="20" weight="bold" />
-            </a>
+            </Link>
           </div>
 
           <!-- Decorative element -->

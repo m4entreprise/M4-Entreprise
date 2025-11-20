@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import { Link } from '@inertiajs/vue3';
 import { PhList, PhX } from '@phosphor-icons/vue';
 
 const props = defineProps<{
@@ -9,10 +10,10 @@ const props = defineProps<{
 const isMenuOpen = ref(false);
 
 const menuItems = [
-  { label: 'Services', href: '#services' },
-  { label: 'Portfolio', href: '#portfolio' },
-  { label: 'Méthodologie', href: '#methodologie' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Portfolio', href: '/portfolio' },
+  { label: 'Méthodologie', href: '/#methodologie' },
+  { label: 'Contact', href: '/#contact' },
 ];
 </script>
 
@@ -26,7 +27,7 @@ const menuItems = [
     <div class="container mx-auto px-6 lg:px-12">
       <div class="flex items-center justify-between">
         <!-- Logo -->
-        <a href="#" class="flex items-center gap-3 group hover:scale-105 transition-transform duration-300">
+        <Link href="/" class="flex items-center gap-3 group hover:scale-105 transition-transform duration-300">
           <div class="w-12 h-12 rounded-2xl gradient-primary flex items-center justify-center shadow-lg shadow-primary/50 group-hover:shadow-primary/70 transition-all duration-300">
             <span class="text-white font-bold text-xl">M4</span>
           </div>
@@ -34,7 +35,7 @@ const menuItems = [
             <h1 class="text-2xl font-display font-bold text-white group-hover:text-primary transition-colors duration-300">M4 Entreprise</h1>
             <p class="text-xs text-foreground/60">Solutions digitales premium</p>
           </div>
-        </a>
+        </Link>
 
         <!-- Desktop Menu -->
         <nav class="hidden lg:flex items-center gap-8">
@@ -52,7 +53,7 @@ const menuItems = [
         <!-- CTA Button -->
         <div class="hidden lg:flex items-center gap-4">
           <a
-            href="#contact"
+            href="/#contact"
             class="px-6 py-3 bg-gradient-to-r from-primary to-accent hover:shadow-lg hover:shadow-primary/50 text-white rounded-full font-semibold transition-all duration-300 hover:scale-105"
           >
             Démarrer un projet
@@ -85,7 +86,7 @@ const menuItems = [
             {{ item.label }}
           </a>
           <a
-            href="#contact"
+            href="/#contact"
             @click="isMenuOpen = false"
             class="mt-4 px-6 py-3 bg-gradient-to-r from-primary to-accent hover:shadow-lg hover:shadow-primary/50 text-white rounded-full font-semibold text-center transition-all duration-300"
           >

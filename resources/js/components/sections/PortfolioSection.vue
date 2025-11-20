@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
+import { Link } from '@inertiajs/vue3';
 import { PhArrowUpRight } from '@phosphor-icons/vue';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -100,11 +101,11 @@ onMounted(() => {
   <section id="portfolio" class="py-32 relative">
     <div class="container mx-auto px-6 lg:px-12">
       <!-- Section Header -->
-      <div class="max-w-3xl mx-auto text-center mb-16">
-        <h2 class="text-h2 font-display font-bold mb-6 text-white">
+      <div class="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-h2 font-display font-bold mb-4 sm:mb-6 text-white px-4 sm:px-0">
           Notre <span class="gradient-text drop-shadow-[0_0_30px_rgba(108,76,255,0.5)]">Portfolio</span>
         </h2>
-        <p class="text-xl text-foreground/70">
+        <p class="text-base sm:text-lg md:text-xl text-foreground/70 px-4 sm:px-0">
           Découvrez nos réalisations et l'impact que nous avons créé pour nos clients
         </p>
       </div>
@@ -185,13 +186,13 @@ onMounted(() => {
 
       <!-- View All CTA -->
       <div class="mt-16 text-center">
-        <a
+        <Link
           href="/portfolio"
           class="inline-flex items-center gap-3 px-8 py-4 glass-strong hover:bg-primary/20 rounded-full font-medium transition-all duration-300 hover:scale-105"
         >
           Voir tous les projets
           <PhArrowUpRight :size="24" />
-        </a>
+        </Link>
       </div>
     </div>
   </section>
